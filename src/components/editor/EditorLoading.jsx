@@ -11,8 +11,8 @@ export default function EditorLoading({ message = 'Welcome to MZ Word', subMessa
         {/* Stylized 'W' Logo (scaled up version of the header logo) */}
         <div className="relative mb-6">
           <div className="bg-white p-2 rounded-xl shadow-lg border border-neutral-100 flex items-center justify-center animate-pulse">
-            <div className="w-16 h-16 bg-gradient-to-br from-[#2B579A] to-[#1A365D] rounded-lg flex items-center justify-center text-white font-black text-4xl shadow-inner">
-              W
+            <div className="w-16 h-16 bg-gradient-to-br from-[#2B579A] to-[#1A365D] rounded-lg flex items-center justify-center text-white font-black text-3xl shadow-inner">
+              MZ
             </div>
           </div>
           
