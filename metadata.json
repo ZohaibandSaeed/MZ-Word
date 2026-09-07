@@ -1,0 +1,6 @@
+{
+  "name": "DOCX Document Editor",
+  "description": "A complete, browser-based DOCX editor to create, open, edit, and export Word documents client-side.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

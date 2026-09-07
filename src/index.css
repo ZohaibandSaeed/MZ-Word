@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  /* SuperDoc UI Customizations - Professional Polish Word Theme */
+  --sd-ui-font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --sd-ui-action: #2B579A;
+  --sd-ui-action-hover: #204377;
+  --sd-ui-action-text: #ffffff;
+  --sd-ui-radius: 4px;
+  --sd-ui-border: #d1d5db;
+  --sd-ui-toolbar-height: 40px;
+  --sd-ui-toolbar-padding-x: 12px;
+  --sd-ui-toolbar-padding-y: 4px;
+}
+
+/* Ensure editor wrapper takes full container height */
+.superdoc-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: #E2E4E7 !important;
+}
+
+/* SuperDoc toolbar container ribbon */
+.superdoc-toolbar-container {
+  background-color: #F9FAFB !important;
+  border-bottom: 1px solid #D1D5DB !important;
+  padding: 4px 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 4px !important;
+  z-index: 10;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Centered document canvas page container */
+.superdoc-editor-container {
+  flex: 1 1 0% !important;
+  min-height: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+  background-color: #E2E4E7 !important;
+  position: relative;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* Ensure all SuperDoc internal wrappers span full width and center children */
+.superdoc,
+.superdoc--contained,
+.superdoc__layers,
+.superdoc__document,
+.superdoc__sub-document,
+.v2-super-editor,
+.v2-super-editor__visuals,
+.v2-super-editor__stage,
+.superdoc-layout {
+  width: 100% !important;
+  min-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}
+
+/* Center each document page in the middle of the screen with proper spacing and elevation */
+.superdoc-page,
+[data-page],
+[data-page-index] {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 24px !important;
+  margin-bottom: 28px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.16), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 1px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Custom scrollbars for desktop document editor */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E2E4E7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B0B5BC;
+  border-radius: 4px;
+  border: 2px solid #E2E4E7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888F99;
+}
